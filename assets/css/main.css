@@ -2272,8 +2272,9 @@ button,
     margin-top: 0;
     padding-top: 0; }
 
-.circle-img {
-  clip-path: circle(400px);
-  overflow: hidden;
-  background-color: blue;
+.circular-img {
+  border-radius: 50%; /* Makes the image circular */
+  overflow: hidden; /* Hides overflow from the circular shape */
+  width: 200px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
 }
