@@ -2284,8 +2284,8 @@ button,
 
 .logoImg {
   overflow: hidden;
-  width: 5%;
-  height: 90%;
+  width: 80px; /* Adjust as needed */
+  height: 80px;
   margin-bottom: -20px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
