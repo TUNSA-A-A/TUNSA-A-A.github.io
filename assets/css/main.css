@@ -2272,26 +2272,19 @@ button,
     margin-top: 0;
     padding-top: 0; }
 
+.circular-img {
+  border-radius: 50%; /* Makes the image circular */
+  overflow: hidden; /* Hides overflow from the circular shape */
+  width: 200px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+  object-fit: cover;
+  margin-right: 40px;
+  float: left;
+}
+
 .logoImg {
   overflow: hidden;
   width: 5%;
   height: 90%;
   margin-bottom: -20px;
-}
-.circle-img {
-  overflow: hidden;
-  border-radius: 50%;
-  width: 150px;
-  height: 120px;
-  margin: 20px;
-}
-
-.circular-img {
-border-radius: 50%; /* Makes the image circular */
-overflow: hidden; /* Hides overflow from the circular shape */
-width: 200px; /* Adjust as needed */
-height: 200px; /* Adjust as needed */
-object-fit: cover;
-margin-right: 40px;
-float: left;
 }
