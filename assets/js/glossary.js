@@ -23,9 +23,29 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Append sorted dt and dd elements back to the glossary
+  let currentLetter = "";
   termDefinitionPairs.forEach((pair) => {
+    const firstLetter = pair.term.textContent.charAt(0).toUpperCase();
+
+    // Add a new row with the letter as background if it's different from the current letter
+    if (firstLetter !== currentLetter) {
+      const row = document.createElement("div");
+      row.className = "letter-row";
+      row.textContent = firstLetter;
+      row.setAttribute("data-letter", firstLetter);
+      glossary.appendChild(row);
+      currentLetter = firstLetter;
+    }
+
+    pair.definition.style.display = "none";
     glossary.appendChild(pair.term);
     glossary.appendChild(pair.definition);
+
+    // visibility of the corresponding definition
+    pair.term.addEventListener("click", function () {
+      pair.definition.style.display =
+        pair.definition.style.display === "none" ? "block" : "none";
+    });
   });
   // Control the visibilty of the button
   toggleButton.addEventListener("click", function () {
