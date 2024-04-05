@@ -1942,6 +1942,18 @@ ul.actions.fit.stacked {
   width: 100%;
 }
 /* Glossary */
+/* Letter  rows */
+.letter-row {
+  background-color: #392f58;
+  padding: 5px;
+  font-weight: bold;
+}
+/* Ken marra n7ebou color l specific letter ( let's keep it as a comment for now )
+.letter-row[data-letter="A"] {
+  background-color: #ffcc00;
+}
+*/
+
 .glossary {
   padding-top: 20px;
   width: 100%;
